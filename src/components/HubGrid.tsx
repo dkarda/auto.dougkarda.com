@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import type { HubLink } from '../../lib/site';
+import { Link } from 'react-router-dom';
+import type { HubLink } from '../lib/site';
 
 export default function HubGrid({ items }: { items: HubLink[] }) {
   return (
@@ -7,7 +7,7 @@ export default function HubGrid({ items }: { items: HubLink[] }) {
       {items.map((item) => (
         <Link
           key={item.href}
-          href={item.href}
+          to={item.href}
           className="group rounded-lg border border-zinc-800 bg-zinc-900/70 p-5 hover:border-amber-500/50 hover:bg-zinc-900 transition"
         >
           <div className="flex items-center justify-between gap-3">

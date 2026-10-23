@@ -1,5 +1,5 @@
-import HubGrid from '../components/HubGrid';
-import PageHeader from '../components/PageHeader';
+import HubGrid from '../../components/HubGrid';
+import PageHeader from '../../components/PageHeader';
 import { resourcePages } from '../../lib/site';
 
 export default function ResourcesHub() {

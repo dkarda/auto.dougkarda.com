@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 type Props = {
   name: string;
   image?: string;
@@ -12,13 +10,7 @@ export default function ProductCard({ name, image, description, link }: Props) {
     <div className="rounded-lg border border-zinc-800 bg-zinc-900/70 p-5 hover:border-amber-500/40 transition">
       <h3 className="font-semibold text-lg mb-1 text-zinc-100">{name}</h3>
       {image ? (
-        <Image
-          src={image}
-          alt={name}
-          width={400}
-          height={300}
-          className="rounded-md mb-3"
-        />
+        <img src={image} alt={name} width={400} height={300} className="rounded-md mb-3" />
       ) : (
         <div className="w-full h-[200px] rounded-md mb-3 bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-600 text-sm">
           No image yet

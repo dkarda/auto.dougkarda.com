@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import HubGrid from './components/HubGrid';
-import PageHeader from './components/PageHeader';
+import { Link } from 'react-router-dom';
+import HubGrid from '../components/HubGrid';
+import PageHeader from '../components/PageHeader';
 import { sections } from '../lib/site';
 
 export default function Home() {
@@ -12,10 +12,10 @@ export default function Home() {
       />
 
       <div className="mb-10 flex flex-wrap gap-3">
-        <Link href="/detailing" className="px-4 py-2 rounded-md bg-amber-500 text-zinc-950 font-semibold hover:bg-amber-400">
+        <Link to="/detailing" className="px-4 py-2 rounded-md bg-amber-500 text-zinc-950 font-semibold hover:bg-amber-400">
           Start with detailing
         </Link>
-        <Link href="/resources" className="px-4 py-2 rounded-md border border-zinc-700 text-zinc-200 hover:border-amber-500/60 hover:text-amber-400">
+        <Link to="/resources" className="px-4 py-2 rounded-md border border-zinc-700 text-zinc-200 hover:border-amber-500/60 hover:text-amber-400">
           Browse resources
         </Link>
       </div>

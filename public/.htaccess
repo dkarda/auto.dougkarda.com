@@ -1,6 +1,12 @@
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+# Used when this folder is the document root, or after Vite copies it into dist/.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+AddType application/javascript .js
+AddType text/css .css

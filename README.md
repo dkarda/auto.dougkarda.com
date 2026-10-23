@@ -1,6 +1,8 @@
 # auto.dougkarda.com
 
-Personal automotive reference site. React + Vite. Deploy the `dist` folder.
+Personal automotive reference site. React + Vite.
+
+Same LiteSpeed layout as golf.dougkarda.com: the repo root is the document root, and `.htaccess` serves the built files from `public/`.
 
 ```bash
 npm install
@@ -10,7 +12,7 @@ npm run dev
 Open [http://localhost:5173](http://localhost:5173).
 
 ```bash
-npm run build
+npm run deploy
 ```
 
-Upload the contents of `dist/` to the host. `public/.htaccess` is copied into `dist` so Apache can serve client-side routes.
+That builds into `dist/`, then copies `index.html` and `assets/` into `public/`. Commit and push those `public/` files plus the root `.htaccess`.

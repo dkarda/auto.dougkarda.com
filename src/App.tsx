@@ -17,7 +17,9 @@ import OilChanges from './pages/maintenance/OilChanges';
 import ResourcesHub from './pages/resources/ResourcesHub';
 import MyLexus from './pages/resources/MyLexus';
 import InsuranceHub from './pages/insurance/InsuranceHub';
-import CoverageBasics from './pages/insurance/CoverageBasics';
+import LicenseHub from './pages/license/LicenseHub';
+import Registration from './pages/license/Registration';
+import TitleAndPlates from './pages/license/TitleAndPlates';
 import NotFound from './pages/NotFound';
 import { site } from './lib/site';
 
@@ -54,7 +56,9 @@ export default function App() {
           <Route path="/resources" element={<ResourcesHub />} />
           <Route path="/resources/my-lexus" element={<MyLexus />} />
           <Route path="/insurance" element={<InsuranceHub />} />
-          <Route path="/insurance/coverage-basics" element={<CoverageBasics />} />
+          <Route path="/license" element={<LicenseHub />} />
+          <Route path="/license/registration" element={<Registration />} />
+          <Route path="/license/title-and-plates" element={<TitleAndPlates />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

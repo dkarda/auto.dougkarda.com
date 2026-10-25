@@ -8,7 +8,7 @@ export default function Home() {
     <main className="max-w-5xl mx-auto px-4 py-10">
       <PageHeader
         title="auto.dougkarda.com"
-        description="A full automotive reference — detailing, repair, maintenance, insurance, and the resources I actually use. No fluff. Just what I want to remember the next time I need it."
+        description="A full automotive reference — detailing, repair, maintenance, insurance, license, registration, and the resources I actually use. No fluff. Just what I want to remember the next time I need it."
       />
 
       <div className="mb-10 flex flex-wrap gap-3">

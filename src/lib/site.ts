@@ -3,7 +3,7 @@ export const site = {
   shortName: 'Auto',
   tagline: 'A personal automotive reference — detailing, repair, maintenance, and the rest of owning a car.',
   description:
-    'Straightforward notes on detailing, repair, maintenance, insurance, and the resources I actually use.',
+    'Straightforward notes on detailing, repair, maintenance, insurance, license, registration, and the resources I actually use.',
 };
 
 export type HubLink = {
@@ -16,8 +16,9 @@ export const sections: HubLink[] = [
   { title: 'Detailing', href: '/detailing', desc: 'The exact setup I use to keep cars clean' },
   { title: 'Repair', href: '/repair', desc: 'When to DIY, when to stop, and how I diagnose' },
   { title: 'Maintenance', href: '/maintenance', desc: 'Intervals, fluids, filters, and wear items' },
+  { title: 'Insurance', href: '/insurance', desc: 'Coverage, claims, and shopping a complex policy' },
+  { title: 'License', href: '/license', desc: 'Registration, title, plates, and what to keep in the car' },
   { title: 'Resources', href: '/resources', desc: 'Manuals, tools, vehicle notes, and links' },
-  { title: 'Insurance', href: '/insurance', desc: 'Coverage, claims, and shopping without the fog' },
 ];
 
 export const detailingPages: HubLink[] = [
@@ -41,6 +42,7 @@ export const resourcePages: HubLink[] = [
   { title: 'My Lexus', href: '/resources/my-lexus', desc: 'Notes, quirks, and products for my own car' },
 ];
 
-export const insurancePages: HubLink[] = [
-  { title: 'Coverage Basics', href: '/insurance/coverage-basics', desc: 'What the common coverages actually mean' },
+export const licensePages: HubLink[] = [
+  { title: 'Registration', href: '/license/registration', desc: 'Renewals, windshield sticker, and proof that actually counts' },
+  { title: 'Title & Plates', href: '/license/title-and-plates', desc: 'Who owns the car, and what happens when that changes' },
 ];

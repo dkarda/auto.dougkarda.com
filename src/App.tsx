@@ -15,6 +15,7 @@ import WhenToDiy from './pages/repair/WhenToDiy';
 import MaintenanceHub from './pages/maintenance/MaintenanceHub';
 import OilChanges from './pages/maintenance/OilChanges';
 import ResourcesHub from './pages/resources/ResourcesHub';
+import Preparedness from './pages/resources/Preparedness';
 import MyLexus from './pages/resources/MyLexus';
 import InsuranceHub from './pages/insurance/InsuranceHub';
 import LicenseHub from './pages/license/LicenseHub';
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/maintenance" element={<MaintenanceHub />} />
           <Route path="/maintenance/oil-changes" element={<OilChanges />} />
           <Route path="/resources" element={<ResourcesHub />} />
+          <Route path="/resources/preparedness" element={<Preparedness />} />
           <Route path="/resources/my-lexus" element={<MyLexus />} />
           <Route path="/insurance" element={<InsuranceHub />} />
           <Route path="/license" element={<LicenseHub />} />

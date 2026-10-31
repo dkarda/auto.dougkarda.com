@@ -39,6 +39,7 @@ export const maintenancePages: HubLink[] = [
 ];
 
 export const resourcePages: HubLink[] = [
+  { title: 'Preparedness', href: '/resources/preparedness', desc: 'What I actually keep in the cabin and trunk' },
   { title: 'My Lexus', href: '/resources/my-lexus', desc: 'Notes, quirks, and products for my own car' },
 ];
 

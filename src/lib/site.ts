@@ -32,6 +32,8 @@ export const detailingPages: HubLink[] = [
 
 export const repairPages: HubLink[] = [
   { title: 'When to DIY', href: '/repair/when-to-diy', desc: 'A simple filter before you pick up a wrench' },
+  { title: 'Paint', href: '/repair/paint', desc: 'Touch-up, chips, and matching the factory color' },
+  { title: 'Headlights', href: '/repair/headlights', desc: 'Buff yellow, cloudy covers back to clear' },
 ];
 
 export const maintenancePages: HubLink[] = [

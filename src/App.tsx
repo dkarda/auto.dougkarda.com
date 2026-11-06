@@ -12,6 +12,8 @@ import ExteriorCleaning from './pages/detailing/ExteriorCleaning';
 import TiresCleaning from './pages/detailing/TiresCleaning';
 import RepairHub from './pages/repair/RepairHub';
 import WhenToDiy from './pages/repair/WhenToDiy';
+import Paint from './pages/repair/Paint';
+import Headlights from './pages/repair/Headlights';
 import MaintenanceHub from './pages/maintenance/MaintenanceHub';
 import OilChanges from './pages/maintenance/OilChanges';
 import ResourcesHub from './pages/resources/ResourcesHub';
@@ -52,6 +54,8 @@ export default function App() {
           <Route path="/detailing/tires" element={<TiresCleaning />} />
           <Route path="/repair" element={<RepairHub />} />
           <Route path="/repair/when-to-diy" element={<WhenToDiy />} />
+          <Route path="/repair/paint" element={<Paint />} />
+          <Route path="/repair/headlights" element={<Headlights />} />
           <Route path="/maintenance" element={<MaintenanceHub />} />
           <Route path="/maintenance/oil-changes" element={<OilChanges />} />
           <Route path="/resources" element={<ResourcesHub />} />
